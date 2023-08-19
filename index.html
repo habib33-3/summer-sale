@@ -61,14 +61,35 @@
       <!-- Banner Section Ends -->
     </header>
 
-    <main>
-      <section>
+    <main class="bg-[#F8F8F8]">
+      <section class="w-4/5 mx-auto pt-32 flex gap-6">
         <!-- shopping card container starts -->
-        <div>
+        <div class="w-3/4">
           <!-- kitchenware starts -->
-          <div>
+          <h2 class="text-[#111111] text-[40px] font-semibold">Kitchenware</h2>
+          <div class="mt-8 flex gap-6 items-center justify-center">
             <!-- spoon card starts -->
-            <div></div>
+            <div class="card w-[342px] bg-base-100 p-5 shadow-xl" id="add-to-cart">
+              <figure class="bg-[#1111110D] rounded-lg py-8 px-5">
+                <img src="images/prod1.png" class="" alt="" />
+              </figure>
+
+              <div class="card-body flex flex-col items-center justify-center">
+                <div class="flex text-[#FFC107]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h2 class="card-title text-[#111111] text-xl font-semibold">
+                  Spoons
+                </h2>
+
+                <p class="text-[#11111180] text-xl">39.00 TK</p>
+              </div>
+            </div>
             <!-- spoon card ends -->
           </div>
           <!-- kitchenware ends -->
@@ -76,13 +97,13 @@
         <!-- shopping card container ends -->
 
         <!-- Shopping cart starts -->
-        <div>
+        <div class="w-1/4">
           <!-- coupon section starts -->
           <div class="rounded-lg p-6">
             <h4 class="text-[#111] text-2xl font-medium">Have coupon?</h4>
             <div class="join mt-4">
               <input
-                class="input input-bordered join-item text-[#11111166] text-xl"
+                class="input input-bordered w-[250px] join-item text-[#11111166] text-xl"
                 placeholder="Coupon code"
               />
               <button
@@ -95,39 +116,38 @@
           </div>
           <!-- coupon section ends -->
 
-          <!--  -->
+          <!-- Calculation section starts -->
+          <div class="p-6">
+            <hr class="text-[#11111126] border" />
+
+            <div class="mt-4 space-y-6">
+              <p class="text-[#111] text-2xl font-medium">
+                Total Price:
+                <span class="text-[#11111180]" id="total-price">00</span>Tk
+              </p>
+
+              <p class="text-[#111] text-2xl font-medium">
+                Discount:
+                <span class="text-[#11111180]" id="discount">00</span>Tk
+              </p>
+
+              <p class="text-[#111] text-2xl font-medium">
+                Total: <span class="text-[#11111180]" id="total">00</span>Tk
+              </p>
+            </div>
+
+            <button
+              class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
+            >
+              Make Purchase
+            </button>
+          </div>
+          <!-- Calculation section ends -->
         </div>
         <!-- Shopping cart ends -->
-
-        <!-- Calculation section starts -->
-        <div class="p-6">
-          <hr class="text-[#11111126] border" />
-
-          <div class="mt-4 space-y-6">
-            <p class="text-[#111] text-2xl font-medium">
-              Total Price:
-              <span class="text-[#11111180]" id="total-price">00</span>Tk
-            </p>
-
-            <p class="text-[#111] text-2xl font-medium">
-              Discount: <span class="text-[#11111180]" id="discount">00</span>Tk
-            </p>
-
-            <p class="text-[#111] text-2xl font-medium">
-              Total: <span class="text-[#11111180]" id="total">00</span>Tk
-            </p>
-          </div>
-
-          <button
-            class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
-          >
-            Make Purchase
-          </button>
-        </div>
-
-        <!-- Calculation section ends -->
       </section>
     </main>
+
     <footer></footer>
 
     <script src="app.js"></script>
