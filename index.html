@@ -69,8 +69,14 @@
           <h2 class="text-[#111111] text-[40px] font-semibold">Kitchenware</h2>
           <div class="mt-8 flex gap-6 items-center justify-center">
             <!-- spoon card starts -->
-            <div class="card w-[342px] bg-base-100 p-5 shadow-xl" id="add-to-cart">
-              <figure class="bg-[#1111110D] rounded-lg py-8 px-5">
+            <div
+              class="card w-[342px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              id="add-to-cart"
+              onclick="addToCart(this)"
+            >
+              <figure
+                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+              >
                 <img src="images/prod1.png" class="" alt="" />
               </figure>
 
@@ -99,11 +105,11 @@
         <!-- Shopping cart starts -->
         <div class="w-1/4">
           <!-- coupon section starts -->
-          <div class="rounded-lg p-6">
+          <div class="rounded-lg p-6 bg-white w-max">
             <h4 class="text-[#111] text-2xl font-medium">Have coupon?</h4>
             <div class="join mt-4">
               <input
-                class="input input-bordered w-[250px] join-item text-[#11111166] text-xl"
+                class="input input-bordered w-[210px] join-item text-[#11111166] text-xl"
                 placeholder="Coupon code"
               />
               <button
@@ -117,8 +123,11 @@
           <!-- coupon section ends -->
 
           <!-- Calculation section starts -->
-          <div class="p-6">
-            <hr class="text-[#11111126] border" />
+          <div class="p-6 bg-white rounded-lg flex items-start flex-col mt-4 w-max">
+            <ol id="cart-container" class="ml-6 mb-6">
+
+            </ol>
+            <hr class="text-[#11111126] border w-11/12 mx-auto" />
 
             <div class="mt-4 space-y-6">
               <p class="text-[#111] text-2xl font-medium">
@@ -137,6 +146,7 @@
             </div>
 
             <button
+              disabled
               class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
             >
               Make Purchase
