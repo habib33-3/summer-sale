@@ -86,6 +86,7 @@
                 placeholder="Coupon code"
               />
               <button
+                disabled
                 class="text-xl font-semibold capitalize rounded-lg btn btn-primary join-item"
               >
                 Apply
@@ -93,8 +94,38 @@
             </div>
           </div>
           <!-- coupon section ends -->
+
+          <!--  -->
         </div>
         <!-- Shopping cart ends -->
+
+        <!-- Calculation section starts -->
+        <div class="p-6">
+          <hr class="text-[#11111126] border" />
+
+          <div class="mt-4 space-y-6">
+            <p class="text-[#111] text-2xl font-medium">
+              Total Price:
+              <span class="text-[#11111180]" id="total-price">00</span>Tk
+            </p>
+
+            <p class="text-[#111] text-2xl font-medium">
+              Discount: <span class="text-[#11111180]" id="discount">00</span>Tk
+            </p>
+
+            <p class="text-[#111] text-2xl font-medium">
+              Total: <span class="text-[#11111180]" id="total">00</span>Tk
+            </p>
+          </div>
+
+          <button
+            class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
+          >
+            Make Purchase
+          </button>
+        </div>
+
+        <!-- Calculation section ends -->
       </section>
     </main>
     <footer></footer>
