@@ -26,8 +26,15 @@ function addToCart(target) {
     target.childNodes[3].innerText.split("\n")[2]
   );
 
-  totalPrice = totalPrice + productPrice;
+  totalPrice = parseFloat(totalPrice) + parseFloat(productPrice);
   setInnerText("total-price", totalPrice);
 
- 
+  const purchaseBtn = document.getElementById("purchase-btn");
+  purchaseBtn.removeAttribute("disabled");
+
+  const discountBtn = document.getElementById("discount-btn");
+
+  if (totalPrice > 200) {
+    discountBtn.removeAttribute("disabled");
+  }
 }
