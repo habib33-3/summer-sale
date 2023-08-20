@@ -27,14 +27,14 @@
     <title>Summer Sale</title>
   </head>
 
-  <body>
-    <header class="bg-[#F9F6E2]">
+  <body class="">
+    <header class="bg-[#F9F6E2] items-center justify-center flex flex-col">
       <!-- Banner Section Starts -->
       <section
-        class="flex flex-col items-center justify-center w-4/5 mx-auto text-center gap-7 lg:flex-row"
+        class="flex flex-col items-center justify-center w-4/5 mx-auto text-center gap-5 p-0 lg:flex-row"
       >
         <!-- Banner Text starts -->
-        <div>
+        <div class="lg:w-1/2">
           <p class="text-[#111] text-4xl font-medium">---SALE FEVER---</p>
 
           <h2 class="text-[#111] text-4xl font-bold mt-12">
@@ -53,7 +53,7 @@
         <!-- Banner Text ends -->
 
         <!-- Banner Image Starts -->
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
           <img src="images/Summer 1.png" alt="" />
         </div>
         <!-- Banner Image Ends -->
@@ -61,21 +61,26 @@
       <!-- Banner Section Ends -->
     </header>
 
-    <main class="bg-[#F8F8F8]">
-      <section class="w-4/5 mx-auto pt-32 flex gap-6">
+    <main class="bg-[#F8F8F8] w">
+      <section
+        class="w-4/5 mx-auto pt-32 flex flex-col-reverse 
+         lg:flex-row gap-6"
+      >
         <!-- shopping card container starts -->
         <div class="w-3/4">
           <!-- kitchenware starts -->
           <h2 class="text-[#111111] text-[40px] font-semibold">Kitchenware</h2>
-          <div class="mt-8 flex gap-6 items-center justify-center">
+          <div
+            class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-3 items-center justify-center"
+          >
             <!-- spoon card starts -->
             <div
-              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              class="card w-[250px] h-[360px] bg-base-100 py-5 px-2 shadow-xl hover:bg-base-300"
               id="add-to-cart"
               onclick="addToCart(this)"
             >
               <figure
-                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+                class="bg-[#1111110D] rounded-lg flex items-center justify-center"
               >
                 <img src="images/prod1.png" class="" alt="" />
               </figure>
@@ -100,12 +105,12 @@
 
             <!-- Chopping Board starts -->
             <div
-              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              class="card w-[250px] h-[360px] bg-base-100 py-5 px-2 shadow-xl hover:bg-base-300"
               id="add-to-cart"
               onclick="addToCart(this)"
             >
               <figure
-                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+                class="bg-[#1111110D] rounded-lg flex items-center justify-center"
               >
                 <img src="images/prod2.png" class="" alt="" />
               </figure>
@@ -130,12 +135,12 @@
 
             <!-- Home Cooker starts -->
             <div
-              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              class="card w-[250px] h-[360px] bg-base-100 py-5 px-2 shadow-xl hover:bg-base-300"
               id="add-to-cart"
               onclick="addToCart(this)"
             >
               <figure
-                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+                class="bg-[#1111110D] rounded-lg flex items-center justify-center"
               >
                 <img src="images/prod3.png" class="" alt="" />
               </figure>
@@ -161,10 +166,7 @@
           <!-- kitchenware ends -->
 
           <!-- Sport Wear Section Starts -->
-          <h2 class="text-[#111111] text-[40px] font-semibold">Sportswear</h2>
-          <div>
 
-          </div>
           <!-- Sport Wear Section Starts -->
         </div>
         <!-- shopping card container ends -->
