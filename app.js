@@ -38,7 +38,7 @@ function addToCart(target) {
     discountBtn.removeAttribute("disabled");
   }
 
-  setInnerText("total", totalPrice);
+  setInnerText("total", totalPrice.toFixed(2));
 }
 
 function applyDiscount() {
@@ -49,7 +49,7 @@ function applyDiscount() {
     setInnerText("discount", discountAmount);
 
     const finalPrice = totalPrice - discountAmount;
-    setInnerText("total", finalPrice);
+    setInnerText("total", finalPrice.toFixed(2));
   } else {
     alert("Invalid Coupon code");
   }
