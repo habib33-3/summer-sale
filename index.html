@@ -108,12 +108,13 @@
           <div class="rounded-lg p-6 bg-white w-max">
             <h4 class="text-[#111] text-2xl font-medium">Have coupon?</h4>
             <div class="join mt-4">
-              <input
+              <input id="coupon-code"
                 class="input input-bordered w-[210px] join-item text-[#11111166] text-xl"
                 placeholder="Coupon code"
               />
               <button id="discount-btn"
                 disabled
+                onclick="applyDiscount()"
                 class="text-xl font-semibold capitalize rounded-lg btn btn-primary join-item"
               >
                 Apply

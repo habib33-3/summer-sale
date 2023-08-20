@@ -38,3 +38,15 @@ function addToCart(target) {
     discountBtn.removeAttribute("disabled");
   }
 }
+
+function applyDiscount() {
+  const couponCode = document.getElementById("coupon-code").value;
+
+  if (couponCode === "SELL200") {
+    const discountAmount = (totalPrice * (20 / 100)).toFixed(2);
+    setInnerText("discount", discountAmount);
+
+    const finalPrice = totalPrice - discountAmount;
+    setInnerText("total", finalPrice);
+  }
+}
