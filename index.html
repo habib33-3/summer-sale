@@ -70,7 +70,7 @@
           <div class="mt-8 flex gap-6 items-center justify-center">
             <!-- spoon card starts -->
             <div
-              class="card w-[342px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
               id="add-to-cart"
               onclick="addToCart(this)"
             >
@@ -97,8 +97,75 @@
               </div>
             </div>
             <!-- spoon card ends -->
+
+            <!-- Chopping Board starts -->
+            <div
+              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              id="add-to-cart"
+              onclick="addToCart(this)"
+            >
+              <figure
+                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+              >
+                <img src="images/prod2.png" class="" alt="" />
+              </figure>
+
+              <div class="card-body flex flex-col items-center justify-center">
+                <div class="flex text-[#FFC107]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h2 class="card-title text-[#111111] text-xl font-semibold">
+                  Chopping Board
+                </h2>
+
+                <p class="text-[#11111180] text-xl">25.00 TK</p>
+              </div>
+            </div>
+            <!-- Chopping Board ends -->
+
+            <!-- Home Cooker starts -->
+            <div
+              class="card w-[342px] h-[360px] bg-base-100 p-5 shadow-xl hover:bg-base-300"
+              id="add-to-cart"
+              onclick="addToCart(this)"
+            >
+              <figure
+                class="bg-[#1111110D] rounded-lg py-8 px-5 flex items-center justify-center"
+              >
+                <img src="images/prod3.png" class="" alt="" />
+              </figure>
+
+              <div class="card-body flex flex-col items-center justify-center">
+                <div class="flex text-[#FFC107]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+
+                <h2 class="card-title text-[#111111] text-xl font-semibold">
+                  Home Cooker
+                </h2>
+
+                <p class="text-[#11111180] text-xl">49.00 TK</p>
+              </div>
+            </div>
+            <!-- Home Cooker starts -->
           </div>
           <!-- kitchenware ends -->
+
+          <!-- Sport Wear Section Starts -->
+          <h2 class="text-[#111111] text-[40px] font-semibold">Sportswear</h2>
+          <div>
+
+          </div>
+          <!-- Sport Wear Section Starts -->
         </div>
         <!-- shopping card container ends -->
 
@@ -108,11 +175,13 @@
           <div class="rounded-lg p-6 bg-white w-max">
             <h4 class="text-[#111] text-2xl font-medium">Have coupon?</h4>
             <div class="join mt-4">
-              <input id="coupon-code"
+              <input
+                id="coupon-code"
                 class="input input-bordered w-[210px] join-item text-[#11111166] text-xl"
                 placeholder="Coupon code"
               />
-              <button id="discount-btn"
+              <button
+                id="discount-btn"
                 disabled
                 onclick="applyDiscount()"
                 class="text-xl font-semibold capitalize rounded-lg btn btn-primary join-item"
@@ -124,10 +193,10 @@
           <!-- coupon section ends -->
 
           <!-- Calculation section starts -->
-          <div class="p-6 bg-white rounded-lg flex items-start flex-col mt-4 w-max">
-            <ol id="cart-container" class="ml-6 mb-6">
-
-            </ol>
+          <div
+            class="p-6 bg-white rounded-lg flex items-start flex-col mt-4 w-max"
+          >
+            <ol id="cart-container" class="ml-6 mb-6"></ol>
             <hr class="text-[#11111126] border w-11/12 mx-auto" />
 
             <div class="mt-4 space-y-6">
@@ -146,7 +215,8 @@
               </p>
             </div>
 
-            <button id="purchase-btn"
+            <button
+              id="purchase-btn"
               disabled
               class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
             >

@@ -37,6 +37,8 @@ function addToCart(target) {
   if (totalPrice > 200) {
     discountBtn.removeAttribute("disabled");
   }
+
+  setInnerText("total", totalPrice)
 }
 
 function applyDiscount() {
