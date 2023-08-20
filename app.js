@@ -50,6 +50,8 @@ function applyDiscount() {
 
     const finalPrice = totalPrice - discountAmount;
     setInnerText("total", finalPrice);
+  } else {
+    alert("Invalid Coupon code");
   }
 }
 
