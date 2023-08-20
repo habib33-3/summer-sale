@@ -38,7 +38,7 @@ function addToCart(target) {
     discountBtn.removeAttribute("disabled");
   }
 
-  setInnerText("total", totalPrice)
+  setInnerText("total", totalPrice);
 }
 
 function applyDiscount() {
@@ -51,4 +51,12 @@ function applyDiscount() {
     const finalPrice = totalPrice - discountAmount;
     setInnerText("total", finalPrice);
   }
+}
+
+function goHome() {
+  window.location.href = "index.html";
+
+  setInnerText("total-price", "00");
+  setInnerText("discount", "00");
+  setInnerText("total", "00");
 }

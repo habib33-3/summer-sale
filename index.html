@@ -406,7 +406,10 @@
               </p>
             </div>
 
+            <hr class="text-[#11111126] border w-11/12 mx-auto" />
+
             <button
+              onclick="my_modal_1.showModal()"
               id="purchase-btn"
               disabled
               class="btn btn-primary btn-wide capitalize text-xl font-semibold mt-12"
@@ -418,6 +421,31 @@
         </div>
         <!-- Shopping cart ends -->
       </section>
+
+      <!-- Modal starts -->
+      <dialog id="my_modal_1" class="modal">
+        <form
+          method="dialog"
+          class="modal-box flex flex-col justify-center items-center h-[600px] w-[600px]"
+        >
+          <img src="images/congo.png" alt="" />
+          <h3 class="text-[#111] text-[48px] font-bold">Congratulations!</h3>
+          <p class="text-[#11111180] text-xl mt-4">
+            Your Purchased the product
+          </p>
+          <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+              onclick="goHome()"
+              id="home-btn"
+              class="btn btn-primary text-white text-xl font-semibold mt-14"
+            >
+              Go Home
+            </button>
+          </div>
+        </form>
+      </dialog>
+      <!-- Modal ends -->
     </main>
 
     <footer></footer>
