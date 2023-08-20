@@ -34,7 +34,7 @@ function addToCart(target) {
 
   const discountBtn = document.getElementById("discount-btn");
 
-  if (totalPrice > 200) {
+  if (totalPrice >= 200) {
     discountBtn.removeAttribute("disabled");
   }
 
